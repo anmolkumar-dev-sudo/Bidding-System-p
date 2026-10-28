@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101111" />
+  <link rel="icon" type="image/jpeg" href="../bids.jpg" />
+  <title>Bid — Auction Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="brand-symbol-defs" aria-hidden="true" focusable="false">
+    <symbol id="bidroom-mark" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7">
+        <rect x="4.5" y="5.5" width="17" height="14" rx="3" />
+        <path d="M8 10h6.5M8 14h9" />
+        <rect x="10.5" y="12.5" width="17" height="14" rx="3" fill="#17211c" />
+      </g>
+      <path d="m14.5 22.5 3.7-3.6 3 2 3.7-4" fill="none" stroke="#62c493" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+      <path d="M22.4 16.9h2.5v2.5" fill="none" stroke="#62c493" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" />
+    </symbol>
+  </svg>
+  <nav class="top-nav">
+    <a class="logo" href="#/biddings" aria-label="Bidroom home">
+      <span class="nav-logo-image" aria-hidden="true"><img src="../bids.jpg" alt=""></span>
+      <span>Bidroom</span>
+    </a>
+    <div class="nav-links" id="nav-links"></div>
+    <div class="user-chip hidden" id="user-chip">
+      <span id="nav-user-name"></span>
+    </div>
+    <button class="btn-logout hidden" id="btn-logout">Sign out</button>
+  </nav>
+
+  <div id="request-loader" class="request-loader" role="status" aria-live="polite" hidden>
+    <span class="request-loader-copy">Loading</span>
+    <span class="request-loader-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </div>
+
+  <div id="root"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

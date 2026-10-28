@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "MERN bidding app backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed:demo": "node scripts/seedDemoData.js",
+    "migrate:images": "node scripts/migrateLocalImagesToCloudinary.js",
+    "test": "node --test"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.11.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.5.0",
+    "redis": "^6.3.0"
+  }
+}
