@@ -1079,7 +1079,7 @@ function loginPage() {
   return `
     <main class="login-layout">
       <section class="login-intro">
-        <a class="login-brand" href="#/login" aria-label="Bidroom home"><span class="login-logo-image"><img src="../bids.jpg" alt="Bidroom"></span></a>
+        <a class="login-brand" href="#/login" aria-label="Bidroom home"><span class="login-logo-image"><img src="bids.jpg" alt="Bidroom"></span></a>
         <div class="login-copy">
           <div class="eyebrow">A better way to buy and sell</div>
           <h1>Good things find<br>their next owner.</h1>
@@ -1119,7 +1119,7 @@ function passwordRecoveryPage(mode) {
   return `
     <main class="login-layout recovery-layout">
       <section class="login-intro">
-        <a class="login-brand" href="#/login" aria-label="Bidroom home"><span class="login-logo-image"><img src="../bids.jpg" alt="Bidroom"></span></a>
+        <a class="login-brand" href="#/login" aria-label="Bidroom home"><span class="login-logo-image"><img src="bids.jpg" alt="Bidroom"></span></a>
         <div class="login-copy">
           <div class="eyebrow">Account security</div>
           <h1>${isReset ? "Choose a new password." : "Back to the good stuff."}</h1>
